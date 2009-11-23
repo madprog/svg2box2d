@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BB68E5110BA262100D4AC4B /* CommandEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB68E3110BA25F600D4AC4B /* CommandEvaluator.h */; };
+		0BB68E5210BA262100D4AC4B /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB68E3210BA25F600D4AC4B /* Exception.h */; };
+		0BB68E5310BA262100D4AC4B /* maths.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB68E3310BA25F600D4AC4B /* maths.h */; };
+		0BB68E5410BA262100D4AC4B /* Rectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB68E3410BA25F600D4AC4B /* Rectangle.h */; };
+		0BB68E5510BA262100D4AC4B /* svg.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB68E3510BA25F600D4AC4B /* svg.h */; };
+		0BB68E5610BA262100D4AC4B /* SvgCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB68E3610BA25F600D4AC4B /* SvgCommand.h */; };
+		0BB68E5710BA262100D4AC4B /* SvgObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB68E3710BA25F600D4AC4B /* SvgObject.h */; };
+		0BB68E5810BA262100D4AC4B /* SvgPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB68E3810BA25F600D4AC4B /* SvgPolygon.h */; };
+		0BB68E5910BA262B00D4AC4B /* CommandEvaluator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BB68E3A10BA25F600D4AC4B /* CommandEvaluator.cpp */; };
+		0BB68E5A10BA262B00D4AC4B /* maths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BB68E3C10BA25F600D4AC4B /* maths.cpp */; };
+		0BB68E5B10BA262B00D4AC4B /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BB68E3D10BA25F600D4AC4B /* Rectangle.cpp */; };
+		0BB68E5C10BA262B00D4AC4B /* svg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BB68E3E10BA25F600D4AC4B /* svg.cpp */; };
+		0BB68E5D10BA262B00D4AC4B /* SvgObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BB68E3F10BA25F600D4AC4B /* SvgObject.cpp */; };
+		0BB68E5E10BA262B00D4AC4B /* SvgPolygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BB68E4010BA25F600D4AC4B /* SvgPolygon.cpp */; };
+		0BB68E6110BA26B400D4AC4B /* libBox2D.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB68E6010BA26B400D4AC4B /* libBox2D.dylib */; };
+		0BB68E6510BA270600D4AC4B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB68E6410BA270600D4AC4B /* libxml2.dylib */; };
+		0BB68E8110BA282F00D4AC4B /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BB68E4210BA25F600D4AC4B /* Game.cpp */; };
+		0BB68E8210BA282F00D4AC4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BB68E4410BA25F600D4AC4B /* main.cpp */; };
+		0BB68E8310BA282F00D4AC4B /* SvgDrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BB68E4510BA25F600D4AC4B /* SvgDrawer.cpp */; };
+		0BB68E8610BA284700D4AC4B /* level1.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0BB68E8510BA283F00D4AC4B /* level1.svg */; };
+		0BB68E9C10BA292900D4AC4B /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB68E9B10BA292900D4AC4B /* SDL.framework */; };
+		0BB68E9E10BA293000D4AC4B /* Cairo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB68E9D10BA293000D4AC4B /* Cairo.framework */; };
+		0BB68ED510BA297C00D4AC4B /* svg2box2d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB68E4B10BA260600D4AC4B /* svg2box2d.dylib */; };
+		0BB68ED810BA298A00D4AC4B /* libBox2D.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB68E6010BA26B400D4AC4B /* libBox2D.dylib */; };
+		0BB68ED910BA298A00D4AC4B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB68E6410BA270600D4AC4B /* libxml2.dylib */; };
+		0BB68EEB10BA2A8800D4AC4B /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB68EEA10BA2A8800D4AC4B /* SDLMain.m */; };
+		0BB68EEF10BA2AB700D4AC4B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB68EEE10BA2AB700D4AC4B /* Cocoa.framework */; };
+		0BB68F0810BA2B6F00D4AC4B /* Cairo.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB68E9D10BA293000D4AC4B /* Cairo.framework */; };
+		0BB68F0A10BA2B6F00D4AC4B /* libBox2D.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB68E6010BA26B400D4AC4B /* libBox2D.dylib */; };
+		0BB68F0E10BA2B8200D4AC4B /* SDL.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB68E9B10BA292900D4AC4B /* SDL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BB68ED310BA297000D4AC4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BB68E2410BA257100D4AC4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BB68E4A10BA260600D4AC4B;
+			remoteInfo = svg2box2d;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0BB68F0210BA2AF800D4AC4B /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0BB68F0810BA2B6F00D4AC4B /* Cairo.framework in Copy Frameworks */,
+				0BB68F0E10BA2B8200D4AC4B /* SDL.framework in Copy Frameworks */,
+				0BB68F0A10BA2B6F00D4AC4B /* libBox2D.dylib in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0BB68E3110BA25F600D4AC4B /* CommandEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandEvaluator.h; sourceTree = "<group>"; };
+		0BB68E3210BA25F600D4AC4B /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		0BB68E3310BA25F600D4AC4B /* maths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maths.h; sourceTree = "<group>"; };
+		0BB68E3410BA25F600D4AC4B /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		0BB68E3510BA25F600D4AC4B /* svg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svg.h; sourceTree = "<group>"; };
+		0BB68E3610BA25F600D4AC4B /* SvgCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvgCommand.h; sourceTree = "<group>"; };
+		0BB68E3710BA25F600D4AC4B /* SvgObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvgObject.h; sourceTree = "<group>"; };
+		0BB68E3810BA25F600D4AC4B /* SvgPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvgPolygon.h; sourceTree = "<group>"; };
+		0BB68E3A10BA25F600D4AC4B /* CommandEvaluator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandEvaluator.cpp; sourceTree = "<group>"; };
+		0BB68E3C10BA25F600D4AC4B /* maths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maths.cpp; sourceTree = "<group>"; };
+		0BB68E3D10BA25F600D4AC4B /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		0BB68E3E10BA25F600D4AC4B /* svg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = svg.cpp; sourceTree = "<group>"; };
+		0BB68E3F10BA25F600D4AC4B /* SvgObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SvgObject.cpp; sourceTree = "<group>"; };
+		0BB68E4010BA25F600D4AC4B /* SvgPolygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SvgPolygon.cpp; sourceTree = "<group>"; };
+		0BB68E4210BA25F600D4AC4B /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		0BB68E4310BA25F600D4AC4B /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		0BB68E4410BA25F600D4AC4B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0BB68E4510BA25F600D4AC4B /* SvgDrawer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SvgDrawer.cpp; sourceTree = "<group>"; };
+		0BB68E4610BA25F600D4AC4B /* SvgDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvgDrawer.h; sourceTree = "<group>"; };
+		0BB68E4B10BA260600D4AC4B /* svg2box2d.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = svg2box2d.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB68E6010BA26B400D4AC4B /* libBox2D.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libBox2D.dylib; path = ../Box2D/Build/Xcode/build/Release/libBox2D.dylib; sourceTree = SOURCE_ROOT; };
+		0BB68E6410BA270600D4AC4B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
+		0BB68E7B10BA282100D4AC4B /* svg2box2d_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = svg2box2d_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB68E7D10BA282100D4AC4B /* svg2box2d_test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "svg2box2d_test-Info.plist"; sourceTree = "<group>"; };
+		0BB68E8510BA283F00D4AC4B /* level1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1.svg; sourceTree = "<group>"; };
+		0BB68E9B10BA292900D4AC4B /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = /Library/Frameworks/SDL.framework; sourceTree = "<absolute>"; };
+		0BB68E9D10BA293000D4AC4B /* Cairo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cairo.framework; path = /Library/Frameworks/Cairo.framework; sourceTree = "<absolute>"; };
+		0BB68EE910BA2A8800D4AC4B /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = "<group>"; };
+		0BB68EEA10BA2A8800D4AC4B /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
+		0BB68EEE10BA2AB700D4AC4B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BB68E4910BA260600D4AC4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB68E6110BA26B400D4AC4B /* libBox2D.dylib in Frameworks */,
+				0BB68E6510BA270600D4AC4B /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB68E7910BA282100D4AC4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB68ED810BA298A00D4AC4B /* libBox2D.dylib in Frameworks */,
+				0BB68ED910BA298A00D4AC4B /* libxml2.dylib in Frameworks */,
+				0BB68ED510BA297C00D4AC4B /* svg2box2d.dylib in Frameworks */,
+				0BB68E9C10BA292900D4AC4B /* SDL.framework in Frameworks */,
+				0BB68E9E10BA293000D4AC4B /* Cairo.framework in Frameworks */,
+				0BB68EEF10BA2AB700D4AC4B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BB68E2210BA257100D4AC4B = {
+			isa = PBXGroup;
+			children = (
+				0BB68E4C10BA260600D4AC4B /* Products */,
+				0BB68E3010BA25F600D4AC4B /* include */,
+				0BB68E8410BA283F00D4AC4B /* resources */,
+				0BB68E3910BA25F600D4AC4B /* src */,
+				0BB68E4110BA25F600D4AC4B /* test */,
+				0BB68E7D10BA282100D4AC4B /* svg2box2d_test-Info.plist */,
+				0BB68E9D10BA293000D4AC4B /* Cairo.framework */,
+				0BB68E9B10BA292900D4AC4B /* SDL.framework */,
+				0BB68E6010BA26B400D4AC4B /* libBox2D.dylib */,
+				0BB68E6410BA270600D4AC4B /* libxml2.dylib */,
+				0BB68EEE10BA2AB700D4AC4B /* Cocoa.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		0BB68E3010BA25F600D4AC4B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0BB68E3110BA25F600D4AC4B /* CommandEvaluator.h */,
+				0BB68E3210BA25F600D4AC4B /* Exception.h */,
+				0BB68E3410BA25F600D4AC4B /* Rectangle.h */,
+				0BB68E3610BA25F600D4AC4B /* SvgCommand.h */,
+				0BB68E3710BA25F600D4AC4B /* SvgObject.h */,
+				0BB68E3810BA25F600D4AC4B /* SvgPolygon.h */,
+				0BB68E3310BA25F600D4AC4B /* maths.h */,
+				0BB68E3510BA25F600D4AC4B /* svg.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0BB68E3910BA25F600D4AC4B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0BB68E3A10BA25F600D4AC4B /* CommandEvaluator.cpp */,
+				0BB68E3D10BA25F600D4AC4B /* Rectangle.cpp */,
+				0BB68E3F10BA25F600D4AC4B /* SvgObject.cpp */,
+				0BB68E4010BA25F600D4AC4B /* SvgPolygon.cpp */,
+				0BB68E3C10BA25F600D4AC4B /* maths.cpp */,
+				0BB68E3E10BA25F600D4AC4B /* svg.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		0BB68E4110BA25F600D4AC4B /* test */ = {
+			isa = PBXGroup;
+			children = (
+				0BB68E4210BA25F600D4AC4B /* Game.cpp */,
+				0BB68E4310BA25F600D4AC4B /* Game.h */,
+				0BB68EE910BA2A8800D4AC4B /* SDLMain.h */,
+				0BB68EEA10BA2A8800D4AC4B /* SDLMain.m */,
+				0BB68E4510BA25F600D4AC4B /* SvgDrawer.cpp */,
+				0BB68E4610BA25F600D4AC4B /* SvgDrawer.h */,
+				0BB68E4410BA25F600D4AC4B /* main.cpp */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		0BB68E4C10BA260600D4AC4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BB68E4B10BA260600D4AC4B /* svg2box2d.dylib */,
+				0BB68E7B10BA282100D4AC4B /* svg2box2d_test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BB68E8410BA283F00D4AC4B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BB68E8510BA283F00D4AC4B /* level1.svg */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0BB68E4710BA260600D4AC4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB68E5110BA262100D4AC4B /* CommandEvaluator.h in Headers */,
+				0BB68E5210BA262100D4AC4B /* Exception.h in Headers */,
+				0BB68E5410BA262100D4AC4B /* Rectangle.h in Headers */,
+				0BB68E5610BA262100D4AC4B /* SvgCommand.h in Headers */,
+				0BB68E5710BA262100D4AC4B /* SvgObject.h in Headers */,
+				0BB68E5810BA262100D4AC4B /* SvgPolygon.h in Headers */,
+				0BB68E5310BA262100D4AC4B /* maths.h in Headers */,
+				0BB68E5510BA262100D4AC4B /* svg.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0BB68E4A10BA260600D4AC4B /* svg2box2d */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB68E4F10BA260900D4AC4B /* Build configuration list for PBXNativeTarget "svg2box2d" */;
+			buildPhases = (
+				0BB68E4710BA260600D4AC4B /* Headers */,
+				0BB68E4810BA260600D4AC4B /* Sources */,
+				0BB68E4910BA260600D4AC4B /* Frameworks */,
+				0BB68F2510BA2CD100D4AC4B /* Change library paths */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = svg2box2d;
+			productName = svg2box2d;
+			productReference = 0BB68E4B10BA260600D4AC4B /* svg2box2d.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		0BB68E7A10BA282100D4AC4B /* svg2box2d_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB68E8010BA282200D4AC4B /* Build configuration list for PBXNativeTarget "svg2box2d_test" */;
+			buildPhases = (
+				0BB68F0210BA2AF800D4AC4B /* Copy Frameworks */,
+				0BB68E7710BA282100D4AC4B /* Resources */,
+				0BB68E7810BA282100D4AC4B /* Sources */,
+				0BB68E7910BA282100D4AC4B /* Frameworks */,
+				0BB68F0410BA2B0800D4AC4B /* Change library paths */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BB68ED410BA297000D4AC4B /* PBXTargetDependency */,
+			);
+			name = svg2box2d_test;
+			productName = svg2box2d_test;
+			productReference = 0BB68E7B10BA282100D4AC4B /* svg2box2d_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BB68E2410BA257100D4AC4B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0BB68E2710BA257100D4AC4B /* Build configuration list for PBXProject "svg2box2d" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 0BB68E2210BA257100D4AC4B;
+			productRefGroup = 0BB68E4C10BA260600D4AC4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BB68E4A10BA260600D4AC4B /* svg2box2d */,
+				0BB68E7A10BA282100D4AC4B /* svg2box2d_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BB68E7710BA282100D4AC4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB68E8610BA284700D4AC4B /* level1.svg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BB68F0410BA2B0800D4AC4B /* Change library paths */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Change library paths";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -change /Library/Frameworks/Cairo.framework/Cairo @executable_path/../Frameworks/Cairo.framework/Cairo \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\ninstall_name_tool -change @executable_path/libBox2D.dylib @executable_path/../Frameworks/libBox2D.dylib \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\ninstall_name_tool -change /Library/Frameworks/Cairo.framework/Libraries/libpng12.0.dylib @executable_path/../Frameworks/Cairo.framework/Libraries/libpng12.0.dylib \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/Cairo.framework/Cairo\"\ninstall_name_tool -change /Library/Frameworks/Cairo.framework/Libraries/libpixman-1.0.dylib @executable_path/../Frameworks/Cairo.framework/Libraries/libpixman-1.0.dylib \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/Cairo.framework/Cairo\"\ninstall_name_tool -change /Library/Frameworks/Cairo.framework/Libraries/libcairo.2.dylib @executable_path/../Frameworks/Cairo.framework/Libraries/libcairo.2.dylib \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/Cairo.framework/Cairo\"\ninstall_name_tool -change /Library/Frameworks/Cairo.framework/Libraries/libpixman-1.0.dylib @executable_path/../Frameworks/Cairo.framework/Libraries/libpixman-1.0.dylib \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/Cairo.framework/Libraries/libcairo.2.dylib\"\n";
+		};
+		0BB68F2510BA2CD100D4AC4B /* Change library paths */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Change library paths";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -change @executable_path/libBox2D.dylib @executable_path/../Frameworks/libBox2D.dylib \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BB68E4810BA260600D4AC4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB68E5910BA262B00D4AC4B /* CommandEvaluator.cpp in Sources */,
+				0BB68E5B10BA262B00D4AC4B /* Rectangle.cpp in Sources */,
+				0BB68E5D10BA262B00D4AC4B /* SvgObject.cpp in Sources */,
+				0BB68E5E10BA262B00D4AC4B /* SvgPolygon.cpp in Sources */,
+				0BB68E5A10BA262B00D4AC4B /* maths.cpp in Sources */,
+				0BB68E5C10BA262B00D4AC4B /* svg.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB68E7810BA282100D4AC4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB68E8110BA282F00D4AC4B /* Game.cpp in Sources */,
+				0BB68EEB10BA2A8800D4AC4B /* SDLMain.m in Sources */,
+				0BB68E8310BA282F00D4AC4B /* SvgDrawer.cpp in Sources */,
+				0BB68E8210BA282F00D4AC4B /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BB68ED410BA297000D4AC4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BB68E4A10BA260600D4AC4B /* svg2box2d */;
+			targetProxy = 0BB68ED310BA297000D4AC4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BB68E2510BA257100D4AC4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		0BB68E2610BA257100D4AC4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		0BB68E4D10BA260900D4AC4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/include/libxml2,
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../Box2D/Include\"";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../Box2D/Build/Xcode/build/Release\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = svg2box2d;
+			};
+			name = Debug;
+		};
+		0BB68E4E10BA260900D4AC4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../Box2D/Build/Xcode/build/Release\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = svg2box2d;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		0BB68E7E10BA282200D4AC4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					/Library/Frameworks/Cairo.framework/Headers,
+					/usr/include/libxml2,
+				);
+				HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../Box2D/Include\"";
+				INFOPLIST_FILE = "svg2box2d_test-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../Box2D/Build/Xcode/build/Release\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = svg2box2d_test;
+			};
+			name = Debug;
+		};
+		0BB68E7F10BA282200D4AC4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "svg2box2d_test-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../Box2D/Build/Xcode/build/Release\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = svg2box2d_test;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BB68E2710BA257100D4AC4B /* Build configuration list for PBXProject "svg2box2d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB68E2510BA257100D4AC4B /* Debug */,
+				0BB68E2610BA257100D4AC4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BB68E4F10BA260900D4AC4B /* Build configuration list for PBXNativeTarget "svg2box2d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB68E4D10BA260900D4AC4B /* Debug */,
+				0BB68E4E10BA260900D4AC4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BB68E8010BA282200D4AC4B /* Build configuration list for PBXNativeTarget "svg2box2d_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB68E7E10BA282200D4AC4B /* Debug */,
+				0BB68E7F10BA282200D4AC4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BB68E2410BA257100D4AC4B /* Project object */;
+}

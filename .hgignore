@@ -1,0 +1,24 @@
+build
+.libs
+.deps
+aclocal.m4
+autom4te.cache
+config.log
+config.status
+configure
+include/config.h.in
+include/config.h
+include/stamp-h1
+libtool
+Makefile
+Makefile.in
+
+/src/libsvg2box2d.la
+test/svg2box2d_test
+
+syntax: glob
+test/svg2box2d_test-*
+/src/libsvg2box2d_la-*
+
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.pbxuser
